@@ -137,8 +137,10 @@ Clinical_Variant_Annotation/
 │   ├── patient_final_filtered.vcf              # BCFTools-filtered and fully annotated VCF
 │   └── Clinical_Variant_Annotation_Report.xlsx # Complete clinical annotation report
 │
-├── Screenshots/
-│   └── (UCSC Genome Browser — AlphaMissense and REVEL track captures)
+├── UCSC_Visualizations/
+│   ├── CF_Alpha.png / CF_revel.png
+│   ├── FH_Alpha.png / FH_revel.png
+│   └── PKU_Alpha.png / PKU_revel.png
 │
 ├── pipeline.sh   # BCFTools variant filtering and extraction pipeline
 └── README.md     # Project documentation
@@ -189,6 +191,28 @@ The VCF file can be submitted to the [ClinVar Submission Portal](https://www.ncb
 | [AlphaMissense](https://alphamissense.hegelab.org/) | v1.0 | Deep-learning structural pathogenicity prediction |
 | [REVEL](https://sites.google.com/site/revelgenomics/) | Latest | Ensemble missense variant pathogenicity scoring |
 | [BCFTools](https://samtools.github.io/bcftools/) | v1.18 | VCF filtering, extraction, and manipulation |
+
+---
+
+## Pathogenicity Score Visualizations (UCSC Genome Browser)
+
+### Cystic Fibrosis — *CFTR* (chr7:117,587,806)
+
+| AlphaMissense | REVEL |
+|---|---|
+| ![CF AlphaMissense](UCSC_Visualizations/CF_Alpha.png) | ![CF REVEL](UCSC_Visualizations/CF_revel.png) |
+
+### Familial Hypercholesterolemia — *LDLR* (chr19:11,105,587)
+
+| AlphaMissense | REVEL |
+|---|---|
+| ![FH AlphaMissense](UCSC_Visualizations/FH_Alpha.png) | ![FH REVEL](UCSC_Visualizations/FH_revel.png) |
+
+### Phenylketonuria — *PAH* (chr12:102,852,747)
+
+| AlphaMissense | REVEL |
+|---|---|
+| ![PKU AlphaMissense](UCSC_Visualizations/PKU_Alpha.png) | ![PKU REVEL](UCSC_Visualizations/PKU_revel.png) |
 
 ---
 

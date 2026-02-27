@@ -1,0 +1,36 @@
+##fileformat=VCFv4.2
+##fileDate=20260228
+##source=BCFTools_v1.18_FilteredOutput
+##reference=GRCh38/hg38
+##FILTER=<ID=PASS,Description="All filters passed — High quality variant calls">
+##FILTER=<ID=LowQual,Description="Low quality score (QUAL < 30)">
+##FILTER=<ID=LowDP,Description="Low read depth (DP < 10)">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=TRANSCRIPT,Number=1,Type=String,Description="MANE Select transcript">
+##INFO=<ID=HGVS_C,Number=1,Type=String,Description="HGVS coding sequence name">
+##INFO=<ID=HGVS_P,Number=1,Type=String,Description="HGVS protein sequence name">
+##INFO=<ID=VARIANT_CLASS,Number=1,Type=String,Description="Variant classification type">
+##INFO=<ID=CONSEQUENCE,Number=1,Type=String,Description="Functional consequence">
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=CLNREVSTAT,Number=.,Type=String,Description="ClinVar review status">
+##INFO=<ID=CLNDN,Number=.,Type=String,Description="Associated disease name in ClinVar">
+##INFO=<ID=CLNID,Number=1,Type=String,Description="ClinVar variation ID">
+##INFO=<ID=DBSNP,Number=1,Type=String,Description="dbSNP rsID">
+##INFO=<ID=AF_GNOMAD,Number=1,Type=Float,Description="Allele frequency in gnomAD v3.1">
+##INFO=<ID=AM_SCORE,Number=1,Type=Float,Description="AlphaMissense pathogenicity score (0-1)">
+##INFO=<ID=AM_CLASS,Number=1,Type=String,Description="AlphaMissense classification">
+##INFO=<ID=REVEL_SCORE,Number=1,Type=Float,Description="REVEL pathogenicity score (0-1)">
+##INFO=<ID=OMIM,Number=1,Type=String,Description="OMIM phenotype entry ID">
+##INFO=<ID=ACMG,Number=.,Type=String,Description="ACMG/AMP classification criteria met">
+##INFO=<ID=FINAL_CLASS,Number=1,Type=String,Description="Final ACMG/AMP variant classification">
+##bcftools_filterVersion=1.18
+##bcftools_filterCommand=bcftools view -r chr7:117480025-117668665,chr19:11089444-11133820,chr12:102835615-102960382 -f PASS -i 'QUAL>=30 && DP>=10' patient_raw.vcf.gz
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype (0/0=homozygous ref, 0/1=heterozygous, 1/1=homozygous alt)">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Total read depth at this position">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for ref and alt alleles">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality score">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled likelihoods for genotypes">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT_01
+chr7	117587806	rs75527207	G	A	3200	PASS	GENE=CFTR;TRANSCRIPT=NM_000492.4;HGVS_C=c.1652G>A;HGVS_P=p.Gly551Asp;VARIANT_CLASS=SNV;CONSEQUENCE=missense_variant;CLNSIG=Pathogenic;CLNREVSTAT=reviewed_by_expert_panel;CLNDN=Cystic_Fibrosis|Hereditary_pancreatitis|CBAVD;CLNID=VCV000007107;DBSNP=rs75527207;AF_GNOMAD=0.000015;AM_SCORE=0.9897;AM_CLASS=likely_pathogenic;REVEL_SCORE=0.99;OMIM=219700;ACMG=PS3|PS4|PP3;FINAL_CLASS=Pathogenic	GT:DP:AD:GQ:PL	0/1:45:22,23:99:890,0,870
+chr19	11105587	rs121908028	C	G	2850	PASS	GENE=LDLR;TRANSCRIPT=NM_000527.5;HGVS_C=c.681C>G;HGVS_P=p.Asp227Glu;VARIANT_CLASS=SNV;CONSEQUENCE=missense_variant;CLNSIG=Pathogenic;CLNREVSTAT=criteria_provided_multiple_submitters;CLNDN=Familial_hypercholesterolemia|LDL_receptor_deficiency|Hyperlipoproteinemia_type_2a;CLNID=VCV000000251;DBSNP=rs121908028;AF_GNOMAD=0.000010;AM_SCORE=0.9881;AM_CLASS=likely_pathogenic;REVEL_SCORE=0.864;OMIM=143890;ACMG=PS4|PP1_Strong|PS3_Moderate|PM1|PM2|PP3|PP4;FINAL_CLASS=Pathogenic	GT:DP:AD:GQ:PL	0/1:38:18,20:99:810,0,780
+chr12	102852747	rs5030858	C	T	3450	PASS	GENE=PAH;TRANSCRIPT=NM_000277.3;HGVS_C=c.1222C>T;HGVS_P=p.Arg408Trp;VARIANT_CLASS=SNV;CONSEQUENCE=missense_variant;CLNSIG=Pathogenic;CLNREVSTAT=reviewed_by_expert_panel;CLNDN=Phenylketonuria|Phenylalanine_hydroxylase_deficiency|Hyperphenylalaninemia_mild;CLNID=VCV000000577;DBSNP=rs5030858;AF_GNOMAD=0.000040;AM_SCORE=0.999;AM_CLASS=pathogenic;REVEL_SCORE=0.79;OMIM=261600;ACMG=PS3_Strong|PM3_Strong|PP3|PP4_Moderate;FINAL_CLASS=Pathogenic	GT:DP:AD:GQ:PL	0/1:52:25,27:99:950,0,920

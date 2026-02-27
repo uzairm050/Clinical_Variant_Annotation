@@ -35,7 +35,7 @@ This repository documents a structured clinical variant interpretation workflow 
 
 ---
 
-## Variant Annotation
+## Variant Annotations
 
 ### 1. Cystic Fibrosis — *CFTR*: NM_000492.4:c.1652G>A (p.Gly551Asp)
 
@@ -216,6 +216,20 @@ The VCF file can be submitted to the [ClinVar Submission Portal](https://www.ncb
 
 ---
 
+## Conclusion
+
+All three variants identified in this analysis — CFTR:p.Gly551Asp, LDLR:p.Asp227Glu, and PAH:p.Arg408Trp — were classified as **Pathogenic** under ACMG/AMP guidelines, supported by convergent evidence from functional studies, population genetics, clinical observations, and computational predictors. Both AlphaMissense and REVEL scores consistently exceeded pathogenicity thresholds across all three variants, reinforcing the reliability of in-silico tools as a complement to experimental and clinical evidence in variant interpretation workflows.
+
+This repository serves as a structured reference for clinical variant annotation methodology, demonstrating how publicly available databases and computational tools can be integrated into a reproducible, evidence-based classification pipeline.
+
+---
+
+## License
+
+This project is intended for academic and educational purposes. All variant data is sourced from publicly accessible databases (ClinVar, OMIM, UCSC Genome Browser) and is used in accordance with their respective terms of use.
+
+---
+
 ## References
 
 1. CFTR2 Expert Panel (2017). ClinVar expert panel review of CFTR:c.1652G>A.
@@ -224,3 +238,9 @@ The VCF file can be submitted to the [ClinVar Submission Portal](https://www.ncb
 4. Blau, N. et al. (2010). Phenylketonuria. *The Lancet*, 376(9750), 1417–1427.
 5. Richards, S. et al. (2015). Standards and guidelines for the interpretation of sequence variants. *Genetics in Medicine*, 17(5), 405–424.
 6. Cheng, J. et al. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. *Science*, 381(6664).
+
+---
+
+<p align="center">
+  <i>Prepared as part of a Clinical Bioinformatics coursework project — GRCh38/hg38 reference genome — February 2026</i>
+</p>

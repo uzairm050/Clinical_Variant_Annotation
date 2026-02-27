@@ -224,12 +224,6 @@ This repository serves as a structured reference for clinical variant annotation
 
 ---
 
-## License
-
-This project is intended for academic and educational purposes. All variant data is sourced from publicly accessible databases (ClinVar, OMIM, UCSC Genome Browser) and is used in accordance with their respective terms of use.
-
----
-
 ## References
 
 1. CFTR2 Expert Panel (2017). ClinVar expert panel review of CFTR:c.1652G>A.
@@ -241,6 +235,4 @@ This project is intended for academic and educational purposes. All variant data
 
 ---
 
-<p align="center">
-  <i>Prepared as part of a Clinical Bioinformatics coursework project — GRCh38/hg38 reference genome — February 2026</i>
-</p>
+

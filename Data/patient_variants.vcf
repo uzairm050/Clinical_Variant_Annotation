@@ -1,0 +1,23 @@
+##fileformat=VCFv4.2
+##fileDate=20260228
+##source=ClinVar_Manual_Curation
+##reference=GRCh38/hg38
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=HGVS_C,Number=1,Type=String,Description="HGVS coding sequence name">
+##INFO=<ID=HGVS_P,Number=1,Type=String,Description="HGVS protein sequence name">
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=CLNDN,Number=.,Type=String,Description="ClinVar disease name">
+##INFO=<ID=CLNREVSTAT,Number=.,Type=String,Description="ClinVar review status">
+##INFO=<ID=AM_SCORE,Number=1,Type=Float,Description="AlphaMissense pathogenicity score">
+##INFO=<ID=AM_CLASS,Number=1,Type=String,Description="AlphaMissense classification">
+##INFO=<ID=REVEL_SCORE,Number=1,Type=Float,Description="REVEL pathogenicity score">
+##INFO=<ID=ACMG,Number=.,Type=String,Description="ACMG/AMP classification criteria met">
+##INFO=<ID=OMIM,Number=1,Type=String,Description="OMIM entry ID">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT_01
+chr7	117587806	rs75527207	G	A	99	PASS	GENE=CFTR;HGVS_C=NM_000492.4:c.1652G>A;HGVS_P=p.Gly551Asp;CLNSIG=Pathogenic;CLNDN=Cystic_Fibrosis|Hereditary_pancreatitis|Congenital_bilateral_aplasia_of_vas_deferens;CLNREVSTAT=reviewed_by_expert_panel;AM_SCORE=0.9897;AM_CLASS=likely_pathogenic;REVEL_SCORE=0.99;ACMG=PS3|PS4|PP3;OMIM=219700	GT:DP:GQ	0/1:45:99
+chr19	11105587	rs121908028	C	G	99	PASS	GENE=LDLR;HGVS_C=NM_000527.5:c.681C>G;HGVS_P=p.Asp227Glu;CLNSIG=Pathogenic;CLNDN=Familial_hypercholesterolemia|LDL_receptor_deficiency|Hyperlipoproteinemia_type_2a;CLNREVSTAT=criteria_provided_multiple_submitters;AM_SCORE=0.9881;AM_CLASS=likely_pathogenic;REVEL_SCORE=0.864;ACMG=PS4|PP1_Strong|PS3_Moderate|PM1|PM2|PP3|PP4;OMIM=143890	GT:DP:GQ	0/1:38:99
+chr12	102852747	rs5030858	C	T	99	PASS	GENE=PAH;HGVS_C=NM_000277.3:c.1222C>T;HGVS_P=p.Arg408Trp;CLNSIG=Pathogenic;CLNDN=Phenylketonuria|Phenylalanine_hydroxylase_deficiency|Hyperphenylalaninemia_mild;CLNREVSTAT=reviewed_by_expert_panel;AM_SCORE=0.999;AM_CLASS=pathogenic;REVEL_SCORE=0.79;ACMG=PS3_Strong|PM3_Strong|PP3|PP4_Moderate;OMIM=261600	GT:DP:GQ	0/1:52:99

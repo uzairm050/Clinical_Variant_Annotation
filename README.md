@@ -35,7 +35,7 @@ This repository documents a structured clinical variant interpretation workflow 
 
 ---
 
-## Variant Annotations
+## Variant Annotation
 
 ### 1. Cystic Fibrosis — *CFTR*: NM_000492.4:c.1652G>A (p.Gly551Asp)
 
